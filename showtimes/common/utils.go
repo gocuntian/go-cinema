@@ -44,10 +44,10 @@ var AppConfig configuration
 // Initialize AppConfig
 func initConfig() {
 	file, err := os.Open("common/config.json")
-	defer file.Close()
 	if err != nil {
 		log.Fatalf("[loadConfig]: %s\n", err)
 	}
+	defer file.Close()
 	decoder := json.NewDecoder(file)
 	AppConfig = configuration{}
 	err = decoder.Decode(&AppConfig)
