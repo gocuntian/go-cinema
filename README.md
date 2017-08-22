@@ -31,17 +31,12 @@ docker-compose stop
 Including new changes
 ==============================
 
-If you need change some source code you can deploy it typing:
-
 ```
 docker-compose build
 ```
 
 Restore database information
 ======================
-
-You can start using an empty database for all microservices, but if you want you can restore a preconfigured data following this steps:
-
 **_Access to mongodb container typing:_**
 
 ```
